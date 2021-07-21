@@ -258,6 +258,7 @@ section#two section.wrapper section.content a.button {
 	}
 	section#two {
 		background-size: 600px;
+		height: 500px;
 	}
 	section#two section.wrapper section.content h1 {
 		font-size: 26px;
@@ -320,7 +321,7 @@ section#two section.wrapper section.content a.button {
 	}
 	section#two {
 		background-image:none;
-		height:60%;
+		height:0;
 	}
 	section#two section.wrapper section.content {
 		text-align: center;
