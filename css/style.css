@@ -203,7 +203,7 @@ section#two {
 	background-repeat:no-repeat;
 	background-size: contain;
 	background-position: bottom right;
-	height: 100vh;
+	height: 50vh;
 }
 section#two section.wrapper {
 	
