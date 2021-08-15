@@ -143,7 +143,12 @@ body {
 
 
 
-
+@media all and (max-width: 1020px) {
+	#home {
+		height:100%;
+		padding-bottom: 20px;
+	}
+}
 @media all and (max-width: 980px) {
 	
 }
@@ -185,7 +190,7 @@ body {
 		width: 38%;
 	}
 }
-@media all and (max-width: 360px) {
+@media all and (max-width: 320px) {
 	#home img.s {
 		width: 42%;
 	}
