@@ -121,8 +121,8 @@ body {
 }
 #home a.button {
 	background-color: #ff9f19;
+	border-radius: 32px;
 	color: #fff;
-	display:inline-block;
 	padding: 12px 14px;
 	width:150px;
 	display: flex;
@@ -132,6 +132,142 @@ body {
 	width: 16%;
 	margin-left: 16px;
 }
+section#merch {
+	padding: 40px 0px 40px 0px;
+	background-color: #09161d;
+}
+section#merch .content {
+	
+}
+section#merch .content div.top {
+	background-color: #f1f1f1;
+	padding: 40px;
+	border-radius: 10px;
+	text-align: center;
+}
+section#merch .content div.top h2 {
+	margin-bottom: 10px;
+	font-weight: 700;
+	font-size: 26px;
+}
+section#merch .content div.top span {
+	color: red;
+	font-weight: 700;
+}
+section#merch .content div.bottom {
+	background-color: #09161d;
+	padding: 40px;
+	margin-top: 36px;
+	display: flex;
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+}
+section#merch .content div.bottom div.box {
+	position: relative;
+	width: 320px;
+	height: 420px;
+	background-color: #122936;
+	border-radius:20px;
+	overflow: hidden;
+}
+section#merch .content div.bottom div.box::before {
+	content:' ';
+	position: absolute;
+	top:-50%;
+	width: 100%;
+	height: 100%;
+	background-color: #2196f3;
+	transform:skewY(346deg);
+	transition:0.5s;
+}
+section#merch .content div.bottom div.box:hover::before {
+	transform:skewY(390deg);
+	top:-70%;
+}
+section#merch .content div.bottom div.box::after {
+	content:'Apple';
+	position: absolute;
+	bottom:0;
+	left:0;
+	font-weight: 900;
+	font-size: 8em;
+	color:rgba(0 , 0 , 0 , 0.1);
+}
+section#merch .content div.bottom div.box div.imgbx {
+	position:relative;
+	width:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 20px;
+	z-index: 1;
+	margin-bottom: 10px;
+}
+section#merch .content div.bottom div.box div.imgbx img {
+	width: 50%;
+	transition:0.5s;
+}
+section#merch .content div.bottom div.box:hover div.imgbx img {
+	width: 38%;
+}
+
+section#merch .content div.bottom div.box div.content {
+	position: relative;
+	padding:20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction:column;
+	z-index: 1;
+}
+section#merch .content div.bottom div.box div.content h3 {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	text-transform:uppercase;
+	letter-spacing: 1px;
+}
+section#merch .content div.bottom div.box div.content h2.price {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 600;
+	margin-top: 10px;
+	text-transform:uppercase;
+	letter-spacing: 1px;
+}
+section#merch .content div.bottom div.box div.content h2 small {
+	
+}
+section#merch .content div.bottom div.box div.content a {
+	position: relative;
+	padding:10px 30px;
+	margin-top: 15px;
+	color: #fff;
+	background-color: #2196f3;
+	letter-spacing: 1px;
+	text-transform:uppercase;
+	border-radius: 30px;
+	top:200px;
+	opacity:0;
+	transition:0.5s;
+}
+section#merch .content div.bottom div.box:hover div.content a {
+	top:0;
+	opacity:1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -149,8 +285,22 @@ body {
 		padding-bottom: 20px;
 	}
 }
+@media all and (max-width: 1280px) {
+	#home {
+		height: 110vh;
+	}
+	section#merch .content div.top {
+		padding:20px;
+	}
+}
 @media all and (max-width: 980px) {
-	
+	#home {
+		height:120vh;
+	}
+	section#merch .content div.top {
+		width: 90%;
+		margin:0 auto;
+	}
 }
 @media all and (max-width: 768px) {
 	#home img.s {
@@ -189,9 +339,15 @@ body {
 	#home img.s {
 		width: 38%;
 	}
+	section#merch .content div.bottom div.box div.content h3 {
+		text-align: center;
+	}
 }
 @media all and (max-width: 320px) {
 	#home img.s {
 		width: 42%;
+	}
+	section#merch .content div.bottom div.box div.content {
+		margin-top: 30px;
 	}
 }
