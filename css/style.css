@@ -70,207 +70,64 @@ br.clear {
 body {
 	font-family: 'Josefin Sans';
 }
+
+
 header {
-	padding: 20px 0px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background:#1f1f1f;
-}
-header .wrapper {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-header div.left {
-	display: flex;
-	align-items: center;
-}
-header div.left h3 {
-	color: #fff;
-}
-header div.left h3 sup img {
-	width: 6%;
-	position: relative;
-	bottom:5px;
-	right:3px;
-}
-header div.left h3::first-letter {
-	font-size: 28px;
-}
-header div.left h1 {
-	width: 100px;
-	margin-right: 30px;
-}
-header div.left h1 a {
+	padding: 20px 20px;
 	width: 100%;
-	display: block;
 }
-header div.left h1 a img {
-	width: 100%;
-	display: block;
-	border-top-right-radius: 160%;
-	border-bottom-left-radius: 210%;
-	border-top-left-radius: 120%;
-	border-bottom-right-radius: 120%;
-}
- /*header div.right*/
-header div.right {
-
-}
-header div.right ul {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-header div.right ul li {
-	margin-right: 40px;
-}
-header div.right ul li:last-child {
-	margin-right: 30px;
-}
-header div.right ul li a {
-	color: #fff;
-}
-header div.right ul li a::first-letter {
-	font-size: 30px;
-}
-
-
-
-	/*#home*/
-
-#home {
-	padding: 50px 0px;
-	background: url(../images/bird.jpg) no-repeat;
-	background-position: top left;
-	background-size: 100%;
-}
-#home .wrapper {
-	
-}
-#home span {
-	margin-bottom: 16px;
-	display: block;
-	background-color: rgb(255, 115, 0);
-	width: 16%;
-	padding: 12px 14px;
-	border-radius: 18px;
-	font-weight: 500;
-	color: #fff;
-}
-#home h2 {
-	margin-bottom: 16px;
-	color: #fff;
-}
-#home h2::first-letter {
-	font-size: 30px;
-}
-#home p {
-	color: #fff;
-	margin-bottom: 30px;
-}
-#home div.two {
-
-}
-#home div.two span {
-	width: 21%;
-}
-#home div.two h2 {
-	
-}
-#home div.two p {
-	
-}
-#home div.three {
-
-}
-#home div.three span {
-	width: 25%;
-	margin-bottom: 20px;
-}
-#home div.three h2 {
-	
-}
-#home div.three p {
-	
-}
-
-
-
-	/*#contact*/
-
-#contact {
-	
-}
-#contact .top {
-	background:
-	linear-gradient(50deg,rgba(255, 148, 8, 0.521),rgba(7, 160, 231, 0.534)),
-	url(../images/call.jpg) no-repeat;
-	background-position: center left;
-	background-size: 100%;
-	height: 400px;
-	position: relative;
-}
-#contact .top div.bar {
-	width: 100%;
-	position: absolute;
-	top:0;
-	left:0;
-	background-color:
-	 rgb(255, 115, 0);
-	height: 50px;
+header h1 {
 	text-align: center;
 }
-#contact .top div.bar h5 {
-	color: #000;
-	font-weight: 700;
-	padding-top: 15px;
-	font-size: 26px;
-	letter-spacing: 1px;
-}
-#contact .bottom {
+
+#window {
 
 }
-#contact ul {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	position: relative;
-	bottom:300px;
-}
-#contact ul li {
+#window .calc_box {
+	text-align: center;
 	width: 40%;
-	height: 180px;
-	background:#fff;
-	padding: 20px 18px;
-	border-radius: 14px;
-	text-align: center;
+	height: 70%;
+	margin:0 auto;
+	background-color: rgb(54, 54, 54);
+	padding: 30px 20px;
 }
-#contact ul li img {
-	width: 20%;
-	background: rgb(238, 236, 236);
-	border-radius: 50%;
-	border:2px solid #1f1f1f;
-	padding: 14px;
-	position: relative;
-	right:210px;
-	bottom: 60px;
+#window .calc_box div#top {
+	width: 97%;
+	height: 20%;
+	font-size: 36px;
+	text-align: right;
+	background: rgb(230, 230, 230);
+	margin-bottom: 40px;
+	padding: 30px 10px;
 }
-#contact ul li h4 {
-	position: relative;
-	bottom:80px;
+#window .calc_box div.top h1.screen {
+	
 }
-#contact ul li p {
-	position: relative;
-	bottom:50px;
+#window .calc_box div.bottom {
+	width: 100%;
+	height: 70%;
+	display: flex;
+	flex-wrap: wrap;
 }
-#contact .bottom {
-	height: 50px;
-	background:
-	linear-gradient(50deg,rgb(255, 123, 0),rgba(0, 132, 255, 0));
+#window .calc_box div.bottom div {
+	width: 23%;
+	border: 2px solid #000;
+	background-color: #ffffff;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	transition: all .100s;
+	padding: 8px;
 }
-#contact .bottom h4 {
-	padding-top: 14px;
-	text-align: center;
+#window .calc_box div.bottom div:hover {
+	background-color: rgb(14, 14, 14);
+}
+#window .calc_box div.bottom div:hover h1 {
+	color: rgb(255, 255, 255);
+}
+#window .calc_box div.bottom div#equal:hover {
+	background-color: #115ad9;
+}
+#window .calc_box div.bottom div h1{
+	font-size: 32px;
+	color:rgb(0, 0, 0);
 }
