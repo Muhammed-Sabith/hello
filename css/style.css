@@ -131,3 +131,23 @@ header h1 {
 	font-size: 32px;
 	color:rgb(0, 0, 0);
 }
+
+
+@media all and (max-width:768px){
+	#window .calc_box {
+		width: 60%;
+	}
+} 
+@media all and (max-width: 480px){
+	#window .calc_box div.bottom div{
+		width: 20%;
+	}
+	#window .calc_box div.bottom div#back {
+		width: 64%;
+	}
+}
+@media all and (max-width: 320px){
+	#window .calc_box{
+		width: 80%;
+	}
+}
